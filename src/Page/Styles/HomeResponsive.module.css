@@ -1,0 +1,914 @@
+/* <---- CSS RESPONSIVO ----> */
+
+/* <---- HOME ----> */
+@media only screen and (width >=320px) and (width <=430px)
+/* <---- CSS MOBILE ----> */
+    {
+    .Home {
+        height: 615px;
+    }
+
+    .Tittle {
+        width: 365px;
+        height: 172px;
+        left: calc(50% - 360px/2);
+        top: 129px;
+
+        & h1 {
+            font-size: 38px;
+            line-height: 43px;
+        }
+    }
+
+    .RabiscoTittle {
+        width: 339.45px;
+        left: 45px;
+        top: 295px;
+    }
+
+    .SubTitle {
+        width: 360px;
+        height: 96px;
+        left: calc(50% - 360px/2);
+        top: 335px;
+
+        & h1 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    .BtnDescubra {
+        position: absolute;
+        width: 260.13px;
+        height: 59.56px;
+        left: calc(50% - 260.13px/2);
+        top: 493px;
+
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media only screen and (width >=768px) and (width <=834px)
+/* <---- CSS TABLET ----> */
+    {
+    .Home {
+        height: 615px;
+    }
+
+    .Tittle {
+        width: 526px;
+        height: 162px;
+        left: calc(50% - 526px/2);
+        top: 145px;
+
+        & h1 {
+            font-size: 48px;
+            line-height: 54px;
+        }
+    }
+
+    .RabiscoTittle {
+        width: 469.47px;
+        left: 210px;
+        top: 296.74px;
+    }
+
+    .SubTitle {
+        width: 580px;
+        height: 90px;
+        left: calc(50% - 580px/2);
+        top: 337px;
+
+        & h1 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    .BtnDescubra {
+        width: 260.13px;
+        height: 59.56px;
+        left: calc(50% - 260.13px/2 + 0.06px);
+        top: 472px;
+
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media only screen and (width >=1024px) and (width <=1440px)
+/* <---- CSS NOTEBOOK ----> */
+    {
+    .Home {
+        height: 825px;
+    }
+
+    .Tittle {
+        width: 1068px;
+        height: 160px;
+        left: calc(50% - 1068px/2);
+        top: 260px;
+
+        & h1 {
+            font-size: 76px;
+            line-height: 80px;
+        }
+    }
+
+    .RabiscoTittle {
+        width: 650.32px;
+        left: 560px;
+        top: 405px;
+    }
+
+    .SubTitle {
+        width: 980px;
+        height: 126px;
+        left: calc(50% - 980px/2);
+        top: 449px;
+
+        & h1 {
+            font-size: 28px;
+            line-height: 42px;
+        }
+    }
+
+    .BtnDescubra {
+        width: 307.13px;
+        height: 65.56px;
+        left: calc(50% - 307.13px/2);
+        top: 645px;
+
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+/* <---- SERVIÇOS ----> */
+@media only screen and (width >=320px) and (width <=430px)
+/* <---- CSS MOBILE ----> */
+    {
+    .Service {
+        height: 1700px;
+
+        & .Background {
+            left: -254px;
+            top: 41px;
+        }
+    }
+
+    .DetailText {
+        width: 415px;
+        height: 218px;
+        left: -40px;
+        top: 1565px;
+
+        font-size: 145.004px;
+        line-height: 218px;
+    }
+
+    .TittleService {
+        width: 350px;
+        height: 176px;
+        left: calc(50% - 350px/2);
+        top: 70px;
+
+        & h1 {
+            font-size: 40px;
+            line-height: 44px;
+        }
+    }
+
+    .ContainerServicos {
+        flex-direction: column;
+        justify-content: center;
+        gap: 45px;
+
+        width: 100%;
+        height: 1317.27px;
+        left: calc(50% - 430px/2);
+        top: 301px;
+
+        & .BancodeDados,
+        .LandingPages,
+        .Ecommerce {
+            width: 360px;
+            height: 409.09px;
+
+            border-radius: 16px;
+
+            & img {
+                left: 32.73px;
+                top: 49.09px;
+                width: 65px;
+                height: 65px;
+            }
+
+            & .Informations {
+                gap: 8.18px;
+
+                width: 294.55px;
+                height: 145.18px;
+                left: calc(50% - 294.55px/2);
+                top: 143.18px;
+
+                & h1 {
+                    height: 41px;
+
+                    font-size: 32px;
+                    line-height: 40.9px;
+                }
+
+                & h2 {
+                    width: 280.64px;
+                    height: 96px;
+
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        & .BancodeDados:hover,
+        .LandingPages:hover,
+        .Ecommerce:hover {
+            transform: scale(1.02);
+        }
+    }
+}
+
+@media only screen and (width >=768px) and (width <=834px)
+/* <---- CSS TABLET ----> */
+    {
+    .Service {
+        height: 1990px;
+
+        & .Background {
+            left: -176px;
+            top: 260px;
+        }
+    }
+
+    .DetailText {
+        width: 643px;
+        height: 337px;
+        left: -46px;
+        top: 1795px;
+
+        font-size: 224.669px;
+        line-height: 337px;
+    }
+
+    .TittleService {
+        width: 668px;
+        height: 149px;
+        left: calc(50% - 668px/2);
+        top: 75px;
+
+        & h1 {
+            font-size: 52px;
+            line-height: 74px;
+        }
+    }
+
+    .ContainerServicos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 45px;
+
+        width: 580px;
+        height: 1590px;
+        left: calc(50% - 580px/2);
+        top: 280px;
+
+        & .BancodeDados,
+        .LandingPages,
+        .Ecommerce {
+            border-radius: 15px;
+            border: 3px solid #f3f3f31f;
+
+            & img {
+                width: 80px;
+                height: 80px;
+            }
+
+            & .Informations {
+                width: 360px;
+                height: 180px;
+                left: calc(50% - 360px/2);
+                top: 175px;
+
+                & h1 {
+                    width: auto;
+                    height: 50px;
+
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+
+                & h2 {
+                    width: 343px;
+                    height: 120px;
+
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        & .BancodeDados:hover,
+        .LandingPages:hover,
+        .Ecommerce:hover {
+            transform: scale(16.10182px);
+        }
+    }
+}
+
+@media only screen and (width >=1024px) and (width <=1440px)
+/* <---- CSS NOTEBOOK ----> */
+    {
+    .Service {
+        height: 1425px;
+
+        & .Background {
+            width: 1605.25px;
+            height: 1529px;
+            left: 207.69px;
+            top: -64px;
+        }
+    }
+
+    .DetailText {
+        left: -45px;
+        top: 1190px;
+    }
+
+    .TittleService {
+        width: 710px;
+        height: 149px;
+        left: calc(50% - 710px/2);
+        top: 85px;
+
+        & h1 {
+            font-size: 56px;
+            line-height: 74px;
+        }
+    }
+
+    .ContainerServicos {
+        flex-wrap: wrap;
+        align-content: flex-start;
+        padding: 0px;
+        gap: 45px 60px;
+
+        width: 940px;
+        height: 1045px;
+        left: calc(50% - 940px/2);
+        top: 280px;
+
+        & .BancodeDados,
+        .LandingPages,
+        .Ecommerce {
+            border-radius: 15px;
+            border: 3px solid #f3f3f31f;
+
+            & img {
+                width: 80px;
+                height: 80px;
+            }
+
+            & .Informations {
+                width: 360px;
+                height: 180px;
+                left: calc(50% - 360px/2);
+                top: 175px;
+
+                & h1 {
+                    width: auto;
+                    height: 50px;
+
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+
+                & h2 {
+                    width: 343px;
+                    height: 120px;
+
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+
+/* <---- TIME ----> */
+@media only screen and (width >=320px) and (width <=430px)
+/* <---- CSS MOBILE ----> */
+    {
+    .Time {
+        height: 1130px;
+
+        & .Background {
+            left: -156px;
+            top: 54px;
+        }
+    }
+
+    .InformationsTeam {
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 9px;
+
+        width: 360px;
+        height: 279px;
+        left: calc(50% - 360px/2);
+        top: 75px;
+
+        & img {
+            width: 178.79px;
+            left: calc(50% - 178.79px/2);
+            top: 35px;
+        }
+
+        & h1 {
+            width: 352px;
+            height: 90px;
+
+            font-size: 40px;
+            line-height: 45px;
+            text-align: center;
+        }
+
+        & h2 {
+            width: 360px;
+            height: 180px;
+
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+        }
+    }
+
+    .Equipe {
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 18px;
+
+        width: 100%;
+        height: 630px;
+        left: 0;
+        top: 407px;
+
+        & .Emerson,
+        .Gustavo,
+        .Joao,
+        .Kauan,
+        .Otavio,
+        .Samuel {
+            width: 360px;
+            height: 90px;
+
+            & h1 {
+                height: 42px;
+                left: 18px;
+                top: 12px;
+
+                font-size: 28px;
+                line-height: 42px;
+            }
+
+            & h2 {
+                height: 30px;
+                left: 18px;
+                top: 44px;
+
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+        & .Emerson:hover,
+        .Gustavo:hover,
+        .Joao:hover,
+        .Kauan:hover,
+        .Otavio:hover,
+        .Samuel:hover {
+            transform: scale(1.02);
+        }
+    }
+}
+
+@media only screen and (width >=768px) and (width <=834px)
+/* <---- CSS TABLET ----> */
+    {
+    .Time {
+        height: 1137px;
+
+        & .Background {
+            left: 1px;
+            top: -12px;
+        }
+    }
+
+    .InformationsTeam {
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 9px;
+
+        width: 605px;
+        height: 264px;
+        left: calc(50% - 605px/2);
+        top: 75px;
+
+        & img {
+            width: 215.38px;
+            right: 3px;
+            top: -1px;
+        }
+
+        & h1 {
+            width: 600px;
+            height: 75px;
+
+            font-size: 48px;
+            line-height: 74px;
+        }
+
+        & h2 {
+            width: 580px;
+            height: 180px;
+
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+        }
+    }
+
+    .Equipe {
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        position: absolute;
+        width: 400px;
+        height: 700px;
+        left: calc(50% - 400px/2);
+        top: 374px;
+    }
+}
+
+@media only screen and (width >=1024px) and (width <=1440px)
+/* <---- CSS NOTEBOOK ----> */
+    {
+    .Time {
+        height: 810px;
+
+        & .Background {
+            left: -10px;
+            top: -15px;
+        }
+    }
+
+    .InformationsTeam {
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 9px;
+
+        width: 723px;
+        height: 252px;
+        left: calc(50% - 723px/2);
+        top: 85px;
+
+        & img {
+            width: 237.85px;
+            right: 33px;
+            top: -1px;
+        }
+
+        & h1 {
+            width: 655px;
+            height: 75px;
+
+            font-size: 52px;
+            line-height: 74px;
+        }
+
+        & h2 {
+            width: 723px;
+            height: 168px;
+
+            font-size: 28px;
+            line-height: 42px;
+            text-align: center;
+        }
+    }
+
+    .Equipe {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        gap: 20px 30px;
+
+        width: 835px;
+        height: 340px;
+        left: calc(50% - 835px/2);
+        top: 386px;
+    }
+}
+
+/* <---- CLIENTES ----> */
+@media only screen and (width >=320px) and (width <=430px)
+/* <---- CSS MOBILE ----> */
+    {
+    .Clientes {
+        height: 905px;
+    }
+
+    .InformationsClientes {
+        gap: 15px;
+
+        width: 360px;
+        height: 320px;
+        left: calc(50% - 360px/2);
+        top: 75px;
+
+        & h1 {
+            width: 352px;
+            height: 180px;
+
+            font-size: 40px;
+            line-height: 45px;
+        }
+
+        & h2 {
+            width: 360px;
+            height: 120px;
+
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    .DetailText2 {
+        width: auto;
+        height: 115px;
+        left: 125px;
+        top: 835px;
+
+        font-size: 105.004px;
+        line-height: 115px;
+    }
+
+    .ContainerManutencao {
+        width: 360px;
+        height: 380px;
+        top: 450px;
+        left: calc(50% - 360px/2);
+
+        border-radius: 30px;
+
+        & h1 {
+            width: 190px;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (width >=768px) and (width <=834px)
+/* <---- CSS TABLET ----> */
+    {
+    .Clientes {
+        height: 905px;
+    }
+
+    .InformationsClientes {
+        gap: 15px;
+
+        width: 680px;
+        height: 335px;
+        left: calc(50% - 680px/2);
+        top: 75px;
+
+        & h1 {
+            width: 680px;
+            height: 200px;
+
+            font-size: 52px;
+            line-height: 64px;
+        }
+
+        & h2 {
+            width: 680px;
+            height: 105px;
+
+            font-size: 28px;
+            line-height: 32px;
+        }
+    }
+
+    .DetailText2 {
+            width: auto;
+            height: 337px;
+            left: 185px;
+            top: 710px;
+    
+            font-size: 224.669px;
+            line-height: 337px;
+    }
+
+    .ContainerManutencao {
+        width: 500px;
+        height: 300px;
+        top: 500px;
+        left: calc(50% - 500px/2);
+
+        border-radius: 30px;
+
+        & h1 {
+            width: 300px;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (width >=1024px) and (width <=1440px)
+/* <---- CSS NOTEBOOK ----> */
+    {
+    .Clientes {
+        height: 1000px;
+    }
+
+    .InformationsClientes {
+        padding: 0px;
+        gap: 15px;
+
+        width: 950px;
+        height: 315px;
+        left: calc(50% - 950px/2);
+        top: 85px;
+
+        & h1 {
+            width: 850px;
+            height: 180px;
+
+            font-size: 52px;
+            line-height: 60px;
+        }
+
+        & h2 {
+            width: 828px;
+            height: 120px;
+
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+
+    .DetailText2 {
+        left: 485px;
+        top: 740px;
+    }
+
+    .ContainerManutencao {
+        top: 450px;
+    }
+}
+
+/* <---- CONTATO ----> */
+@media only screen and (width >=320px) and (width <=430px)
+/* <---- CSS MOBILE ----> */
+    {
+    .Contato {
+        height: 890px;
+    }
+
+    .TittleContato {
+        gap: 2px;
+
+        width: 360px;
+        height: 290px;
+        left: calc(50% - 360px/2);
+        top: 75px;
+
+        & h1 {
+            width: 360px;
+            height: 168px;
+
+            font-size: 40px;
+            line-height: 42px;
+        }
+
+        & h2 {
+            width: 360px;
+            height: 120px;
+
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    .ContainerForms {
+        gap: 10px;
+
+        width: 400px;
+        height: 460px;
+        left: calc(50% - 400px/2);
+        top: 372px;
+    }
+}
+
+@media only screen and (width >=768px) and (width <=834px)
+/* <---- CSS TABLET ----> */
+    {
+    .Contato {
+        height: 880px;
+    }
+
+    .TittleContato {
+        gap: 2px;
+
+        width: 580px;
+        height: 257px;
+        left: calc(50% - 580px/2);
+        top: 75px;
+
+        & h1 {
+            width: 580px;
+            height: 195px;
+
+            font-size: 52px;
+            line-height: 65px;
+        }
+
+        & h2 {
+            width: 580px;
+            height: 60px;
+
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    .ContainerForms {
+        gap: 10px;
+
+        width: 600px;
+        height: 480px;
+        left: calc(50% - 600px/2);
+        top: 352px;
+    }
+}
+
+@media only screen and (width >=1024px) and (width <=1440px)
+/* <---- CSS NOTEBOOK ----> */
+    {
+    .Contato {
+        height: 880px;
+    }
+
+    .TittleContato {
+        width: 1000px;
+        height: 235px;
+        left: calc(50% - 1000px/2);
+        top: 90px;
+
+        & h1 {
+            width: 980px;
+            height: 149px;
+
+            font-size: 64px;
+            line-height: 74px;
+        }
+
+        & h2 {
+            width: 842px;
+            height: 84px;
+
+            font-size: 28px;
+            line-height: 42px;
+        }
+    }
+
+    .ContainerForms {
+        gap: 10px;
+
+        width: 600px;
+        height: 480px;
+        left: calc(50% - 600px/2);
+        top: 350px;
+    }
+}

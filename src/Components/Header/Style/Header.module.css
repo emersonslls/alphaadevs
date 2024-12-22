@@ -1,0 +1,303 @@
+header {
+    box-sizing: border-box;
+
+    position: fixed;
+    width: 100%;
+    height: 120px;
+
+    background: rgba(30, 30, 30, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 9;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Altura da "borda" */
+    background: linear-gradient(to right, #00aaf300 0%, #00ABF3 50%, #00aaf300 100%);
+    z-index: 9;
+}
+
+.logo {
+    position: absolute;
+    width: auto;
+    height: 60px;
+    left: 339px;
+    top: calc(50% - 60px/2);
+    cursor: pointer;
+}
+
+/* Estilo da Navbar para Desktop */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 35px;
+
+    position: absolute;
+    width: 405px;
+    height: 39px;
+    right: 370px;
+    top: calc(50% - 39px/2);
+}
+
+nav li {
+    height: 39px;
+
+    font-family: var(--font-principal);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 39px;
+
+    /* White */
+    color: var(--branco);
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    cursor: pointer;
+}
+
+nav li:hover {
+    font-weight: 600;
+    color: var(--azul);
+    transform: scale(1.05);
+}
+
+/* Botão hamburger - oculto no desktop */
+.hamburger {
+    display: none;
+    position: absolute;
+    height: 45px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.closeIcon {
+    display: none;
+    position: absolute;
+    height: 27px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* <---- CSS REPOSNSIVO ----> */
+@media only screen and (width >=320px) and (width <=430px)
+/* <---- CSS MOBILE ----> */
+    {
+    header {
+        height: 70px;
+    }
+
+    .logo {
+        height: 45px;
+        left: 45px;
+        top: calc(50% - 45px/2);
+        z-index: 9;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        box-sizing: border-box;
+        width: 300px;
+        height: 350px;
+
+        background: rgba(30, 30, 30, 0.5);
+        backdrop-filter: blur(4px);
+        border-radius: 0px 0px 30px 30px;
+
+        z-index: 9;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+
+        position: absolute;
+        width: 121px;
+        height: 190px;
+        left: calc(50% - 121px/2);
+        top: calc(50% - 190px/2);
+    }
+
+    nav li {
+        width: auto;
+        height: 30px;
+
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    nav li:hover {
+        border-bottom: 1.5px solid var(--Blue);
+    }
+
+    .navOpen {
+        display: flex;
+        /* Exibe o menu quando o hamburger for clicado */
+    }
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+        height: 25px;
+        right: 45px;
+        top: calc(50% - 25px/2);
+
+        z-index: 10;
+    }
+
+    .menuIcon {
+        display: flex;
+        width: auto;
+        height: 25px;
+    }
+
+    .closeIcon {
+        display: flex;
+        position: absolute;
+        height: 27px;
+        right: 5px;
+        top: calc(50% - 27px/2);
+    }
+}
+
+@media only screen and (width >=768px) and (width <=834px)
+/* <---- CSS TABLET ----> */
+    {
+    header {
+        height: 80px;
+    }
+
+    .logo {
+        height: 55px;
+        left: 130px;
+        top: calc(50% - 55px/2);
+
+        z-index: 9;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        box-sizing: border-box;
+        width: 400px;
+        height: 450px;
+
+        background: rgba(30, 30, 30, 0.5);
+        backdrop-filter: blur(4px);
+        border-radius: 0px 0px 30px 30px;
+
+        z-index: 9;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 30px;
+
+        position: absolute;
+        width: 121px;
+        height: 250px;
+        left: calc(50% - 121px/2);
+        top: 110px;
+    }
+
+    nav li {
+        width: auto;
+        height: 36px;
+
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    nav li:hover {
+        border-bottom: 1.5px solid var(--azul);
+    }
+
+    .navOpen {
+        display: flex;
+        /* Exibe o menu quando o hamburger for clicado */
+    }
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+        height: 25px;
+        right: 130px;
+        top: calc(50% - 25px/2);
+        z-index: 10;
+    }
+
+    .menuIcon {
+        display: flex;
+        width: auto;
+        height: 25px;
+    }
+
+    .closeIcon {
+        display: flex;
+        position: absolute;
+        height: 27px;
+        right: 5px;
+        top: calc(50% - 27px/2);
+    }
+}
+
+@media only screen and (width >=1024px) and (width <=1440px)
+/* <---- CSS NOTEBOOK ----> */
+    {
+    header {
+        height: 100px;
+    }
+
+    .logo {
+        height: 55px;
+        left: 230px;
+        top: calc(50% - 55px/2);
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    nav ul {
+        gap: 35px;
+
+        right: 230px;
+        position: absolute;
+    }
+
+    nav li {
+        font-size: 20px;
+        line-height: 39px;
+    }
+}

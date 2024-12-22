@@ -1,0 +1,296 @@
+footer {
+    position: relative;
+    width: 100%;
+    height: 50px;
+
+    background: var(--branco);
+
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    /* Altura da "borda" */
+    background: linear-gradient(to right, #00aaf300 5%, #00ABF3 50%, #00aaf300 95%);
+    z-index: 9;
+}
+
+.Information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 500px;
+
+    position: absolute;
+    width: 1220.59px;
+    height: 20px;
+    left: calc(50% - 1220.59px/2);
+    top: calc(50% - 20px/2);
+
+    & .Direitos {
+        width: 355px;
+        height: 20px;
+
+        & h1 {
+            width: 355px;
+            font-family: var(--font-principal);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+            /* identical to box height */
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 2px;
+
+            color: var(--azul);
+        }
+    }
+
+    & .Dev {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 5px;
+
+        width: 370px;
+        height: 20px;
+
+        transition: background-color 0.3s ease, transform 0.3s ease;
+
+        & h1 {
+            width: 177px;
+            height: 20px;
+
+            font-family: var(--font-principal);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 20px;
+            align-items: center;
+
+            color: var(--preto);
+        }
+
+        & img {
+            box-sizing: border-box;
+
+            width: auto;
+            height: 20px;
+        }
+
+        & h2 {
+            width: 155px;
+            height: 20px;
+
+            font-family: var(--font-principal);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 20px;
+            align-items: center;
+
+            color: var(--preto);
+
+            & span {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.Dev:hover {
+    transform: scale(1.05);
+
+    & h1 {
+        font-weight: 500;
+        color: var(--cinza);
+    }
+
+    & img {
+        filter: grayscale(100%) brightness(69%);
+    }
+    
+
+    & h2 {
+        font-weight: 500;
+        color: var(--cinza);
+
+        & span {
+            font-weight: 500;
+            color: var(--cinza);
+        }
+    }
+}
+
+/* <---- CSS RESPONSIVO ----> */
+@media only screen and (width >=320px) and (width <=430px)
+/* <---- CSS MOBILE ----> */
+    {
+    footer {
+        height: 115px;
+    }
+
+    .Information {
+        flex-direction: column;
+        gap: 26px;
+
+        position: absolute;
+        width: 370px;
+        height: 62px;
+        left: calc(50% - 370px/2);
+        top: calc(50% - 62px/2);
+
+        & .Direitos {
+            width: 355px;
+            height: 20px;
+
+            & h1 {
+                width: 355px;
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+
+        & .Dev {
+            width: 370px;
+            height: 20px;
+
+            & h1 {
+                width: 177px;
+                height: 20px;
+
+                font-size: 20px;
+                line-height: 20px;
+            }
+
+            & img {
+                width: auto;
+                height: 20px;
+            }
+
+            & h2 {
+                width: 155px;
+                height: 20px;
+
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (width >=768px) and (width <=834px)
+/* <---- CSS TABLET ----> */
+    {
+    footer {
+        height: 115px;
+    }
+
+    .Information {
+        flex-direction: column;
+        gap: 26px;
+
+        position: absolute;
+        width: 370px;
+        height: 62px;
+        left: calc(50% - 370px/2);
+        top: calc(50% - 62px/2);
+
+        & .Direitos {
+            width: 355px;
+            height: 20px;
+
+            & h1 {
+                width: 355px;
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+
+        & .Dev {
+            width: 370px;
+            height: 20px;
+
+            & h1 {
+                width: 177px;
+                height: 20px;
+
+                font-size: 20px;
+                line-height: 20px;
+            }
+
+            & img {
+                width: auto;
+                height: 20px;
+            }
+
+            & h2 {
+                width: 155px;
+                height: 20px;
+
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (width >=1024px) and (width <=1440px)
+/* <---- CSS NOTEBOOK ----> */
+    {
+    .Information {
+        gap: 250px;
+
+        position: absolute;
+        width: 958.59px;
+        height: 20px;
+        left: calc(50% - 958.59px/2);
+        top: calc(50% - 20px/2);
+
+        & .Direitos {
+            width: 355px;
+            height: 20px;
+
+            & h1 {
+                width: 355px;
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+
+        & .Dev {
+            width: 370px;
+            height: 20px;
+
+            & h1 {
+                width: 177px;
+                height: 20px;
+
+                font-size: 20px;
+                line-height: 20px;
+            }
+
+            & img {
+                width: auto;
+                height: 20px;
+            }
+
+            & h2 {
+                width: 155px;
+                height: 20px;
+
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }
+    }
+}
